@@ -1,4 +1,4 @@
-import navbar from "../component/navbar";
+import navbar from "./navbar";
 
 const About = () => {
     return (
@@ -8,3 +8,4 @@ const About = () => {
       </>
     );
 };
+export default About;
