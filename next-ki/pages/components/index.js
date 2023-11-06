@@ -11,7 +11,7 @@ export default function Home() {
   <meta name='description' content='Belajar Next JS' />
 </Head>
       <><Navbar/></>
-      <image src='/vercel.svg' alt='Logo Vercel' width={200} height={100}/>
+      <image src='next.png' alt='Logo Vercel' width={200} height={100}/>
       <h1>ini halaman Home</h1>
       
       </>
