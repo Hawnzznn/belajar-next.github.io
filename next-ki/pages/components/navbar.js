@@ -1,7 +1,7 @@
 import Link from "next/link"
-const navbar = () => {
+const Navbar = () => {
 trun (
-<nav className="navbar">
+<nav className="Navbar">
     <ul>
         <li>
             <a href="#">Home</a>

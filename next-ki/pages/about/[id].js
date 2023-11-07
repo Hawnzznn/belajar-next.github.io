@@ -8,6 +8,7 @@ export const getStaticPaths = async () => {}
         return{paths, fallback: false};
     }
         
+    );
     export const getStaticProps = async (context) => {
         const {params} = context;
         const id = parseInt(params.id);
@@ -15,9 +16,9 @@ export const getStaticPaths = async () => {}
         const res = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
         const data = await res.json();
 
-        return {
-            props: {
-                user : data,
+    return {
+        props: {
+            user : data,
             },
         };
     };
