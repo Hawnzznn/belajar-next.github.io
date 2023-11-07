@@ -1,20 +1,21 @@
-import Link from "next/link"
+import Link from "next/link";
+
 const Navbar = () => {
-trun (
-<nav className="Navbar">
-    <ul>
+  return (
+    <nav className="navbar">
+      <ul>
         <li>
-            <a href="#">Home</a>
+          <Link href="/">Home</Link>
         </li>
         <li>
-            <a href="#">About</a>
+          <Link href="/about">About</Link>
         </li>
         <li>
-            <a href="#">Contact</a>
+          <Link href="/profil">Profil</Link>
         </li>
-    </ul>
-</nav>
+      </ul>
+    </nav>
+  );
+};
 
-
-)    
-}
+export default Navbar;

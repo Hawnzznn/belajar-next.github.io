@@ -1,6 +1,6 @@
-import Image from 'next/image';
-import Navbar from '../components/Navbar';
-import Head from 'next/head';
+import Image from "next/image";
+import Navbar from "./components/Navbar";
+import Head from "next/head";
 
 export default function Home({ posts }) {
   return (
@@ -10,7 +10,7 @@ export default function Home({ posts }) {
         <meta name="description" content="Belajar Next JS" />
       </Head>
       <Navbar />
-      <Image src="/next.png" alt="Logo Next JS" width={300} height={200} />
+      <Image src="/next.svg" alt="Logo Next JS" width={300} height={200} />
       <h1>Ini halaman Home</h1>
       {posts.map((post) => (
         <div key={post.id}>
