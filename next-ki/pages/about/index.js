@@ -1,7 +1,7 @@
-import Head from "next/head";
-import Navbar from "../components/Navbar";
-import Image from "next/image";
-import Link from "next/link";
+import Head from 'next/head';
+import Navbar from './components/Navbar';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const index = ({ data }) => {
   return (
@@ -28,7 +28,7 @@ export default index;
 
 export const getStaticProps = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
-  const data = await res.json();
+    const data = await res.json();
 
   return {
     props: {
